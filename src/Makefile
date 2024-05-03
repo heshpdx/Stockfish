@@ -410,9 +410,6 @@ ifeq ($(COMP),gcc)
 		endif
 	else ifeq ($(ARCH),loongarch64)
 		CXXFLAGS += -latomic
-	else
-		CXXFLAGS += -m$(bits)
-		LDFLAGS += -m$(bits)
 	endif
 
 	ifeq ($(arch),$(filter $(arch),armv7))
